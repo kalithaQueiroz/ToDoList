@@ -27,12 +27,12 @@ const saveTodo = (text, done = 0, save = 1) => {
 
   const editBtn = document.createElement("button");
   editBtn.classList.add("edit-todo");
-  editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
+  editBtn.innerHTML = '<i class="fa-solid fa-pencil"></i>';
   todo.appendChild(editBtn);
 
   const deleteBtn = document.createElement("button");
   deleteBtn.classList.add("remove-todo");
-  deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+  deleteBtn.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
   todo.appendChild(deleteBtn);
 
   // Utilizando dados da localStorage
@@ -47,6 +47,7 @@ const saveTodo = (text, done = 0, save = 1) => {
   todoList.appendChild(todo);
 
   todoInput.value = "";
+//   todoInput.focus();
 };
 
 const toggleForms = () => {
