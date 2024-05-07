@@ -8,10 +8,11 @@
 }
 
 body {
-    background-image: url(./img/background.jpg);
-    background-position-x: center;
+    background: rgb(100,62,56);
+    background: linear-gradient(0deg, rgba(100,62,56,1) 0%, rgba(160,91,73,1) 27%, rgba(230,159,142,1) 100%);
+/*     background-position-x: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 button {
